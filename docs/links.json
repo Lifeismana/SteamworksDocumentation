@@ -172,6 +172,7 @@
     "features/steam_controller/steam_input_gamepad_emulation_bestpractice",
     "features/steam_controller/steam_input_gamepad_emulation_bestpractices",
     "features/steam_controller/touch_menus",
+    "features/steam_controller/workshop_uploaded_configs",
     "features/steamvr",
     "features/steamvr/enterprise",
     "features/steamvr/info",
