@@ -105,8 +105,7 @@ Returns:<br />
     <li>k_EREsultOK on success.<br /></li>
     <li>
         k_EResultNoConnection, if the session has failed or was closed by the peer and
-        k_nSteamNetworkingSend_AutoRestartBrokenSession was not specified. (You can<br />
-        use
+        k_nSteamNetworkingSend_AutoRestartBrokenSession was not specified. (You can use
         <a href="https://partner.steamgames.com/doc/api/GetSessionConnectionInfo" class="bb_apilink"
             >GetSessionConnectionInfo</a
         >
@@ -222,7 +221,7 @@ trigger a
     href="https://partner.steamgames.com/doc/api/ISteamNetworkingMessages#SteamNetworkingMessagesSessionRequest_t"
     class="bb_apilink"
     >SteamNetworkingMessagesSessionRequest_t</a
-><br />
+>
 callback
 <h2 class="bb_subsection"><a name="GetSessionConnectionInfo"></a>GetSessionConnectionInfo</h2>
 <div class="bb_code cpp">
@@ -243,7 +242,7 @@ and k_nSteamNetworkingSend_AutoRestartBrokenSession.)<br />
 <br />
 Returns the value of
 <a
-    href="https://partner.steamgames.com/doc/api/steamnetworkingtyupes#SteamNetConnectionInfo_t"
+    href="https://partner.steamgames.com/doc/api/steamnetworkingtypes#SteamNetConnectionInfo_t"
     class="bb_apilink"
     >SteamNetConnectionInfo_t</a
 >::m_eState, or k_ESteamNetworkingConnectionState_None if no connection exists with specified peer.
@@ -271,7 +270,7 @@ Posted when a remote host is sending us a message, and we do not already have a 
 </h2>
 <br />
 Posted when we fail to establish a connection, or we detect that communications have been disrupted
-it an unusual way. There is no notification when a peer proactively closes the session. ("Closed by
+in an unusual way. There is no notification when a peer proactively closes the session. ("Closed by
 peer" is not a concept of UDP-style communications, and ISteamNetworkingMessages is primarily
 intended to make porting UDP code easy.)<br />
 <br />
