@@ -190,6 +190,7 @@
     "features/voice",
     "features/workshop",
     "features/workshop/implementation",
+    "features/workshop/itemversioning",
     "features/workshop/tags",
     "finance",
     "finance/payments_salesreporting",
