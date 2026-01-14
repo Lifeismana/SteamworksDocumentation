@@ -28,6 +28,7 @@ For more info on how to use the Steamworks Web API please see the
 <div class="bb_code http">
     POST https://partner.steam-api.com/ISteamMicroTxn/AdjustAgreement/v1/
 </div>
+<br />
 <table>
     <tr>
         <th>Name</th>
@@ -39,7 +40,16 @@ For more info on how to use the Steamworks Web API please see the
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>steamid</strong></td>
@@ -90,9 +100,6 @@ retrieved using
     class="bb_apilink"
     >ISteamMicroTxn/GetUserAgreementInfo</a
 >.<br />
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
@@ -154,7 +161,16 @@ retrieved using
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>steamid</strong></td>
@@ -182,9 +198,6 @@ Cancels a recurring billing agreement (subscription). The agreementid can be ret
     class="bb_apilink"
     >ISteamMicroTxn/GetUserAgreementInfo</a
 >.<br />
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
@@ -239,7 +252,16 @@ Cancels a recurring billing agreement (subscription). The agreementid can be ret
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>orderid</strong></td>
@@ -285,9 +307,6 @@ Change history:<br />
 <ul class="bb_ul">
     <li><strong>Version 2</strong> - Changed to string formatted 64 bit numbers.</li>
 </ul>
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
@@ -353,7 +372,16 @@ Change history:<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>appid</strong></td>
@@ -397,9 +425,6 @@ Change history:<br />
 Steam offers transaction reports that can be downloaded for reconciliation purposes. These reports
 show detailed information about each transaction that affects the settlement of funds into your
 accounts.<br />
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>NOTE:</strong> This method has previous versions which are no longer officially supported.
 They will continue to be usable but it's highly recommended that you use the latest version. Change
@@ -596,7 +621,16 @@ history:<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>steamid</strong></td>
@@ -622,9 +656,6 @@ Instead, use
     >ISteamMicroTxn/GetReport</a
 >
 to see when they were charged for their renewal.<br />
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Version 2</strong> - The status value can be "processing" in the case where Steam has not
 yet charged the user for the agreement. Previously the status value would be "active"<br />
@@ -783,7 +814,16 @@ yet charged the user for the agreement. Previously the status value would be "ac
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>appid</strong></td>
@@ -829,9 +869,6 @@ Change history:<br />
 <ul class="bb_ul">
     <li><strong>Version 2</strong> - Changed to string formatted 64 bit numbers.</li>
 </ul>
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
@@ -910,7 +947,16 @@ Change history:<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>orderid</strong></td>
@@ -1163,9 +1209,6 @@ Change history:<br />
     <li><strong>Version 3</strong> - Enforced quantity amounts to be a 16 bit number.</li>
 </ul>
 <br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
-<br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
     <li>
@@ -1245,7 +1288,16 @@ Change history:<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>orderid</strong></td>
@@ -1308,9 +1360,6 @@ or
 >
 APIs to check actual billing status.<br />
 <br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
-<br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
     <li>
@@ -1372,7 +1421,16 @@ APIs to check actual billing status.<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>appid</strong></td>
@@ -1410,8 +1468,6 @@ Change history:<br />
     </li>
 </ul>
 <br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
@@ -1540,7 +1596,16 @@ Change history:<br />
         <td><strong>key</strong></td>
         <td>string</td>
         <td>✔</td>
-        <td>Steamworks Web API publisher authentication key.</td>
+        <td>
+            Steamworks Web API
+            <a
+                href="https://partner.steamgames.com/doc/webapi_overview/auth#publisher-keys"
+                target="_blank"
+                rel="noreferrer"
+                >publisher key</a
+            >
+            with <strong>Microtransaction</strong> permissions.
+        </td>
     </tr>
     <tr>
         <td><strong>orderid</strong></td>
@@ -1565,9 +1630,6 @@ Change history:<br />
 <ul class="bb_ul">
     <li><strong>Version 2</strong> - Changed to string formatted 64 bit numbers.</li>
 </ul>
-<br />
-<strong>NOTE:</strong> This call requires a publisher API key to use this method. As such this API
-<strong>MUST</strong> be called from a secure server, and can never be used directly by clients!<br />
 <br />
 <strong>Response:</strong><br />
 <ul class="bb_ul">
